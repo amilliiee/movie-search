@@ -17,6 +17,7 @@ const findMovie = async () => {
   const movieName = searchBar.value.split(' ');
   const moviePath = movieName.join('+');
   const movieEndpoint = `${url}?${apiKey}&t=${moviePath}`;
+  console.log(movieEndpoint);
   
   try {
     const response = await fetch(movieEndpoint);
