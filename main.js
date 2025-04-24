@@ -1,4 +1,3 @@
-// import { apiKey } from './apiKey';
 const apiKey = 'apikey=16b4f33b';
 const url = 'https://www.omdbapi.com/';
 const container = document.getElementById('movie-container');
@@ -14,9 +13,8 @@ const searchBar = document.getElementById('search-bar');
 
 
 const findMovie = async () => {
-  // const movieName = searchBar.value.split(' ');
-  // const moviePath = movieName.join('+');
-  const moviePath = 'Avatar:+The+Way+of+Water';
+  const movieName = searchBar.value.split(' ');
+  const moviePath = movieName.join('+');
   const movieEndpoint = `${url}?${apiKey}&t=${moviePath}`;
   console.log(movieEndpoint);
   
@@ -73,11 +71,9 @@ const removeGenres = () => {
   }
 };
 
-// searchBar.addEventListener('keypress', e => {
-//   if (e.key === "Enter") {
-//     resetInfo();
-//     findMovie();
-//   }
-// });
-
-findMovie();
+searchBar.addEventListener('keypress', e => {
+  if (e.key === "Enter") {
+    resetInfo();
+    findMovie();
+  }
+});
