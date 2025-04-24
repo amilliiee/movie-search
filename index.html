@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Movie Search App | devChallenges.io</title>
+  </head>
+  
+  <body>
+    <div class="container" id="content">
+      <img src="./resources/hero-image-movie-search.jpg" alt="image of a planet" class="bg-img" />
+      <div class="hero">
+        <img src="./resources/OMDb-logo.png" alt="omdb logo" class="hero-logo">
+      </div>
+
+      <div class="search-form">
+        <img src="./resources/search_alt.svg" alt="search icon" class="search-icon">
+        <input type="text" placeholder="Search movie" id="search-bar">
+      </div>
+
+      <div class="movie-container" id="movie-container">
+        <img id="movie-poster" src="" alt="Movie poster"/>
+        <div id="movie-info">
+          <span id="movie-title"></span>
+          <div id="movie-genres"></div>
+          <span id="movie-summary"></span>
+          <div id="director">
+            <span>Director:&nbsp;</span>
+            <p id="director-text"></p>
+          </div>
+          <div id="writers">
+            <span>Writers:&nbsp;</span>
+            <p id="writers-text"></p>
+          </div>
+          <div id="stars">
+            <span>Stars:&nbsp;</span>
+            <p id="stars-text"></p>
+          </div>
+          <div id="rating">
+            <span>IMDb Rating:&nbsp;</span>
+            <p id="rating-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
+  </body>
+</html>

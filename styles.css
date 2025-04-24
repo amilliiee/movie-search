@@ -1,0 +1,133 @@
+:root {
+    --page-bg: #111729;
+    --search-bar-bg: #20293A;
+    --white-text: #E3E8EF;
+    --gray-text: #97A3B6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--page-bg);
+    color: var(--white-text);
+    font-family: Outfit, sans-serif;
+}
+
+.container {
+    max-width: 831px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bg-img {
+    max-height: 334px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
+.hero-logo {
+    margin: 190px auto 0;
+    width: 282px;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 573px;
+    height: 64px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--search-bar-bg);
+    margin-top: 36px;
+    padding: 20px 28px;
+}
+
+.search-icon {
+    margin-right: 16px;
+}
+
+.search-form input {
+    border: none;
+    box-shadow: none;
+    margin: auto 0;
+    background-color: inherit;
+    font-size: 16px;
+    width: 100vw;
+    color: var(--white-text);
+}
+
+.search-form input:focus {
+    border: none;
+    outline: none;
+}
+
+.movie-container {
+    border: 2px solid var(--search-bar-bg);
+    border-radius: 16px;
+    padding: 24px;
+    margin-top: 40px;
+    display: none;
+}
+
+#movie-poster {
+    border-radius: 12px;
+    margin-right: 24px;
+    width: 184px;
+    height: 268px;
+}
+
+#movie-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#movie-title {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+#movie-genres {
+    font-size: 12px;
+    margin-bottom: 12px;
+    gap: 8px;
+}
+
+#movie-genres span:not(:last-child) {
+    margin-right: 8px;
+}
+
+.bubble {
+    padding: 4px 12px;
+    border-radius: 50px;
+    background-color: var(--search-bar-bg);
+}
+
+#movie-summary {
+    margin-bottom: 24px;
+}
+
+#director, #writers, #stars {
+    margin-bottom: 8px;
+    display: inline-flex;
+}
+
+#rating {
+    display: inline-flex;
+}
+
+#director span, #writers span, #stars span, #rating span {
+    color: var(--gray-text);
+}
+
+/* 1290 */
+@media (max-width: 1290px) {
+    
+}
