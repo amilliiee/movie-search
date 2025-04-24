@@ -73,9 +73,11 @@ const removeGenres = () => {
   }
 };
 
-searchBar.addEventListener('keypress', e => {
-  if (e.key === "Enter") {
-    resetInfo();
-    findMovie();
-  }
-});
+// searchBar.addEventListener('keypress', e => {
+//   if (e.key === "Enter") {
+//     resetInfo();
+//     findMovie();
+//   }
+// });
+
+findMovie();
