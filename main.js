@@ -14,8 +14,9 @@ const searchBar = document.getElementById('search-bar');
 
 
 const findMovie = async () => {
-  const movieName = searchBar.value.split(' ');
-  const moviePath = movieName.join('+');
+  // const movieName = searchBar.value.split(' ');
+  // const moviePath = movieName.join('+');
+  const moviePath = 'Avatar:+The+Way+of+Water';
   const movieEndpoint = `${url}?${apiKey}&t=${moviePath}`;
   console.log(movieEndpoint);
   
